@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="renderJS.css">
+</head>
+<body>
+    <main>
+
+        <div class="card-main" id="card-main">
+            <form class="form" id="form">
+                <label for="search-city">El clima en</label>
+                <div class="container-input">
+                    <button type="submit">
+                        <img src="images/search-alt-regular-24.png" alt="search icon">
+                    </button>
+                    
+                    <input 
+                       type="text" 
+                       id="search-input"
+                       autocomplete="off"
+                       placeholder="Buscar Ciudad"
+                       class="search-input"
+                    />
+                </div>
+            </form>
+            <p class="p-add__city">
+                Ingrese una ciudad...
+            </p>
+            <div id="container-cards">
+                <!-- <div id="cardWeatherJS">
+                    <div id="containerLeftJS">
+        
+                        <span id="info-tittle">Buenos Aires</span>
+                        <p id="info-subtittle">clouds</p>
+                        <div id="info-temp">
+                            <span id="current-temperature">18°</span>
+                            <span id="sensation">10° ST</span>
+                        </div>
+                    </div>
+
+                    <img src="images/nubecard.png" alt="" id="weather-img">
+
+                    <div id="containerRightJS">
+                        <div id="clima-min-max">
+                            <span id="clima-max"><img src="images/uparrow.png" alt="">Max: 18°</span>
+                            <span id="clima-min"><img src="images/downarrow.png" alt="">Min: 12°</span>
+                        </div>
+                        <div id="div-humedad">
+                            <span id="humedad">Humedad</span>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        Hecho con ❤️ por Lucas Palú
+    </footer>
+    
+    <script src="utils.js"></script>
+    <script src="main.js"></script>
+    <script src="request.js"></script>
+
+</body>
+</html>
