@@ -14,7 +14,7 @@ main {
     padding: 15%;
     background: rgb(2,2,38);
     background: linear-gradient(180deg, rgba(2,2,38,1) 1%, rgba(2,2,66,1) 35%, rgba(0,0,0,1) 81%);  
-    min-height: 90vh;
+    min-height: 95vh;
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -25,12 +25,17 @@ main {
 
 
 footer {
-    height: 10vh;
+    height: 5vh;
     width: 100%;
     text-align: center;
     color: #747373;
     background: rgb(2,2,66);
     background: linear-gradient(180deg, rgb(1, 1, 57) 0%, rgba(2,2,38,1) 0%, rgba(0,0,0,1) 4%);
+    position:sticky;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 
