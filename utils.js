@@ -26,9 +26,9 @@ const convertTemperature = (kelvin) => {
 const renderBgColor = (currentTemp) => {
     if (currentTemp <= 18) {
         return 'background-blue' 
-    } else if(currentTemp > 18 && currentTemp < 27){
+    } else if (currentTemp > 18 && currentTemp < 27) {
         return 'background-green'
-    } else if(currentTemp >= 27){
+    } else if (currentTemp >= 27) {
         return 'background-red'
     }
 }

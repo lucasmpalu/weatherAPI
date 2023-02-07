@@ -132,15 +132,18 @@ height: 100%;
 
 
 .background-red {
-    background-color: rgb(80, 1, 1, 0.9)!important;
+    background: rgb(75,1,1)!important;
+    background: linear-gradient(54deg, rgba(75,1,1,0.9) 1%, rgba(0,0,0,1) 100%)!important;
 
 }
 
 .background-green {
     background-color: rgb(1, 50, 1, 0.9)!important;
+    background: linear-gradient(54deg, rgb(1, 50, 1, 0.9) 1%, rgba(0,0,0,1) 100%)!important;
 
 }
 
 .background-blue {
     background-color: rgba(1, 1, 50, 0.9)!important;
+    background: linear-gradient(54deg, rgba(1, 1, 50, 0.9) 1%, rgba(0,0,0,1) 100%)!important;
 }
