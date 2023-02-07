@@ -6,12 +6,12 @@ const $waitMsg = document.querySelector('.p-add__city')
 const $buttonClose = document.querySelector('#close')
 
 //Guardamos el array de las ciudades
-let citiesSaves = JSON.parse(localStorage.getItem('cities')) || []
+let citiesSaves = JSON.parse(sessionStorage.getItem('cities')) || []
 
 //Guardamos en el localstorage lo que tengo en mi array de objetos
 const saveToLocalStorage = (citiesSaves) => {
 
-    localStorage.setItem('cities', JSON.stringify(citiesSaves))
+    sessionStorage.setItem('cities', JSON.stringify(citiesSaves))
 
 }
 
@@ -20,13 +20,15 @@ const saveToLocalStorage = (citiesSaves) => {
 
 //Renderizar mi HTML
 const renderItems = (data) => {
+    let currentTemp = convertTemperature(data.main.temp)
+    console.log(currentTemp)
+    
     
 
     return `
-    <div id="cardWeatherJS" data-id="${data.id}" class="animate">
-    <img src="images/x-regular-24.png" alt="close" class="close" data-id="${data.id}">
+    <div id="cardWeatherJS" class="${renderBgColor(currentTemp)}" data-id="${data.id}" class="animate">
+        <img src="images/x-regular-24.png" alt="close" class="close" data-id="${data.id}">
         <div id="containerLeftJS">
-        
             <span id="info-tittle">${data.name}, ${data.sys.country}</span>
             <p id="info-subtittle">${data.weather[0].main}</p>
             <div id="info-temp">
@@ -35,7 +37,7 @@ const renderItems = (data) => {
             </div>
         </div>
         
-        <img src="images/nubecard.png" alt="" id="weather-img">
+        <img src="${iconWeather(data.weather[0].main)}" alt="" id="weather-img">
         
         <div id="containerRightJS">
             <div id="clima-min-max">

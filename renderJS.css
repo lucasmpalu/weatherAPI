@@ -1,12 +1,12 @@
 #cardWeatherJS {
     display: flex;
-    background-color: rgba(8, 0, 50, 0.853);
+    background-color: rgba(41, 0, 243, 0.853);
     padding: 1rem;
     border-radius: 10px;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    
+    color: white;
 }
 
 #info-temp {
@@ -129,3 +129,18 @@ height: 100%;
       opacity: 1;
     }
   }
+
+
+.background-red {
+    background-color: rgb(80, 1, 1, 0.9)!important;
+
+}
+
+.background-green {
+    background-color: rgb(1, 50, 1, 0.9)!important;
+
+}
+
+.background-blue {
+    background-color: rgba(1, 1, 50, 0.9)!important;
+}

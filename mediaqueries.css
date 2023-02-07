@@ -1,15 +1,13 @@
 @media screen and (max-width: 700px){
 
-    main {
-        padding: 1.5rem;
-    }
+
 
     .container-input {
         width: 100%;
     }
 
     .card-main {
-        background-color: rgba(0,0,0,1);
+        background: #fafafa54;
         min-height: 200px;
         border-radius: 15px;
         padding: 20px;
@@ -30,9 +28,13 @@
         justify-content: space-between;
         align-items: center;
         position: relative;
+        color: white;
         
     }
 
+    #cardWeatherJS > * {
+        color: white;
+    }
     #containerRightJS {
         display: flex;
         flex-direction: row;
@@ -41,6 +43,7 @@
         height: 100%;
         position: relative;
         gap: 1rem;
+        color: white;
     
         }
     
@@ -52,6 +55,7 @@
             height: max-content;
             display: flex;
             justify-content: center;
+            color: white;
         }
         
 }
