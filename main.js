@@ -23,7 +23,7 @@ const renderItems = (data) => {
     
 
     return `
-    <div id="cardWeatherJS" data-id="${data.id}">
+    <div id="cardWeatherJS" data-id="${data.id}" class="animate">
     <img src="images/x-regular-24.png" alt="close" class="close" data-id="${data.id}">
         <div id="containerLeftJS">
         
@@ -93,17 +93,20 @@ const searchCity = async (e) => {
 const deleteCard = (e) => {
     let idClose = e.target.dataset.id
 
-    if(e.target.classList.contains('close')){ //CONTAINS CON S
+    if (window.confirm('Estás seguro que quieres eliminar la carta de clima de esta ciudad?')) {
         
-        e.target.parentElement.classList.add('hidden')
-        
-        let currentCitys = citiesSaves.filter(item => item.id != idClose)
+        if(e.target.classList.contains('close')){ //CONTAINS CON S
+            
+            e.target.parentElement.classList.add('hidden')
+            
+            let currentCitys = citiesSaves.filter(item => item.id != idClose)
 
-        citiesSaves = currentCitys
-        renderTotal(citiesSaves)
-        saveToLocalStorage(citiesSaves)
+            citiesSaves = currentCitys
+            renderTotal(citiesSaves)
+            saveToLocalStorage(citiesSaves)
 
-        
+            
+        }
     }
 }
 
