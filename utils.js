@@ -58,7 +58,10 @@ const iconWeather = (info) => {
             break        
         case 'Snow':
             return 'images/simbols/snow.png'
-            break      
+            break    
+        case 'Thunderstorm':
+            return 'images/simbols/thunderstorm.png'
+            break       
     
         default:
             break;
