@@ -48,8 +48,8 @@ footer {
     height: 5vh;
     width: 100%;
     text-align: center;
-    color: rgb(1, 1, 1);
-    background: #fafafaea;
+    background-color: rgba(1, 1, 12, 0.99);
+    color: white;
     position:sticky;
     bottom: 0;
     display: flex;
@@ -124,6 +124,8 @@ gap: 1rem;
 
 .p-add__city {
     text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 #clima-max, #clima-min {
