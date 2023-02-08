@@ -13,6 +13,11 @@
     transition: all 0.2s;
 }
 
+#cardWeatherJS:hover > #weather-img {
+    transform: rotate(360deg);
+    transition: all 0.5s;
+}
+
 
 #info-temp {
     display: flex;
