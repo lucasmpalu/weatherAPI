@@ -95,10 +95,11 @@ const searchCity = async (e) => {
 const deleteCard = (e) => {
     let idClose = e.target.dataset.id
 
-    if (window.confirm('Estás seguro que quieres eliminar la carta de clima de esta ciudad?')) {
+   {
         
         if(e.target.classList.contains('close')){ //CONTAINS CON S
-            
+
+            if (window.confirm('Estás seguro que quieres eliminar la carta de clima de esta ciudad?')) {
             e.target.parentElement.classList.add('hidden')
             
             let currentCitys = citiesSaves.filter(item => item.id != idClose)
@@ -106,8 +107,7 @@ const deleteCard = (e) => {
             citiesSaves = currentCitys
             renderTotal(citiesSaves)
             saveToLocalStorage(citiesSaves)
-
-            
+            }     
         }
     }
 }
